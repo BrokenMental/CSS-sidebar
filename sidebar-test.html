@@ -1,0 +1,56 @@
+<head>
+    <style>
+
+#btn-sidebar-list {
+    float:right;
+}
+
+#btn-sidebar-list:checked ~ #list-content{
+	left: 0;
+}
+
+#list-content {
+	/*display: none;*/
+	position: absolute;
+	top:0;
+	left:-360px;
+	background:black;
+	color: white;
+	opacity: 0.8;
+	width: 30vw;
+	height: 100%;
+	z-index: 10000;
+	/*grid-template-rows: 10vh auto;*/
+	transition: 0.3s ease-in;
+}
+
+.btn-sidebar-area {
+	float:right;
+}
+
+#list-content-header {
+	width: 100%;
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: x-large;
+}
+    </style>
+</head>
+<input type="checkbox" id="btn-sidebar-list" class="btn-sidebar-list">
+<label class="fa-solid fa-bars btn-sidebar-list-toggle" for="btn-sidebar-list"></label>
+<div id="list-content">
+    <div id="list-content-header">
+        <p>
+            <span>TITLE LIST</span>
+            <span class="btn-sidebar-area">
+                <!-- <input type="checkbox" id="btn-sidebar-list" class="btn-sidebar-list">
+                <label class="fa-solid fa-bars btn-sidebar-list-toggle" for="btn-sidebar-list"></label> -->
+                <!--<input type="button" id="btn-list-content-close" value="X">-->
+            </span>
+        </p>
+    </div>
+    <div id="list-content-body">
+
+    </div>
+</div>
